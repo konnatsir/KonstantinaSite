@@ -1,0 +1,1078 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #5F3F25;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(158, 135, 109);
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    width: 80%;
+    height: 60px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80%;
+}
+
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.nav ul li {
+    transition: all 0.5s ease;
+}
+
+.nav ul li:hover {
+
+    border-bottom: 5px solid rgb(255, 172, 37);
+}
+
+.nav ul li:hover a {
+    color: rgb(255, 172, 37);
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+
+
+.action-icon {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+.action-icon i {
+    height: 100%;
+    color: #fff;
+}
+
+
+
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.btn {
+    text-decoration: none;
+    width: 150px;
+    padding: 12px 12px;
+    text-align: center;
+    background-color: #5F3F25;
+    color: #FFECCE;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+/*----------------    HEADER IMAGE  - HOME PAGE  -------------*/
+.home-hero-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 520px;
+    width: 100vw;
+    background: url("/images/oia-view-3.webp") no-repeat center/cover;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.032), 0 6px 10px 0 rgba(0, 0, 0, 0.19)
+}
+
+.home-hero-img .test {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000011;
+}
+
+
+
+
+/*----------------HEADER TITLE-------------*/
+.header-title {
+    height: 450px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 60px;
+}
+
+.header-title h3{
+    font-size: 30px;
+}
+
+
+.title-home {
+    font-size: 54px;
+    color: whitesmoke;
+    z-index: 2;
+}
+
+
+
+.icons {
+    width: 100%;
+    height: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 202px;
+    height: 202px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*----------------INTERNAL PAGES AT HOME PAGE-------------*/
+
+
+.internal {
+    height: 450px;
+    width: 80%;
+    display: flex;
+}
+
+.image-1 {
+    height: 350px;
+    width: 50%;
+    background: url("/images/white-building.jpg") no-repeat center center/cover;
+}
+
+
+.info-1 {
+
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 100px;
+    justify-content: center;
+}
+
+.btn-right-1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 150px;
+    padding: 12px 12px;
+    text-align: center;
+    background-color: #5F3F25;
+    color: #FFECCE;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.image-2 {
+    height: 350px;
+    width: 50%;
+    background: url("/images/oia-view-2.webp") no-repeat center center/cover;
+}
+
+
+.info-2 {
+
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-right-2 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 150px;
+    padding: 12px 12px;
+    text-align: center;
+    background-color: #5F3F25;
+    color: #FFECCE;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+.home-page-p {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+
+
+.promo-home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 650px;
+    padding-bottom: 100px;
+
+}
+
+.main-home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.home-page-promo-section{
+    height: 550px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    padding-top: 25px;
+    background-color: #fbf2e499; 
+}
+
+
+/*---------------   CAROUSEL        -------------*/
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    gap:30px;
+    font-size: 25px;
+}
+
+
+.carousel-container img{
+    height: 500px;
+    width: 1000px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------BLOG-------------*/
+
+
+.title-footer-blog {
+    font-size: 54px;
+    color: #5c310e;
+    z-index: 2;
+}
+
+
+
+
+/*----------------FOOTER-------------*/
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFECCE;
+    flex-direction: column;
+    background-color: #5F3F25;
+    gap: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.053), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.copyright {
+    padding-bottom: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+
+
+.footer p a {
+    color: #FFECCE;
+    text-decoration: none;
+}
+
+.footer h4 {
+    color: #FFECCE;
+}
+
+.footer h2 {
+    color: #FFECCE;
+}
+
+.footer li i {
+    color: #FFECCE;
+}
+
+
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.footer-container p {
+    line-height: 25px;
+}
+
+.footer-info h4 {
+    font-size: larger;
+    padding-bottom: 20px;
+    color: #FFECCE;
+}
+
+
+.footer-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+
+}
+
+.socials h1 {
+    width: 50%;
+}
+
+.social-icons {
+    display: flex;
+    width: 50%;
+    list-style: none;
+}
+
+.social-icons li i {
+    width: 50px;
+}
+
+.copyright p {
+    height: 20px;
+    color: #FFECCE;
+}
+
+
+
+
+
+/* --------- TEAM PAGE ----------*/
+
+.team {
+    height: 250px;
+    width: 100%;
+    background: url("/images/offices.jpg") no-repeat center center/cover;
+}
+
+.first-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    gap: 25px;
+}
+
+
+.team-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+}
+
+.title-team {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 54px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+
+.team-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 160px 80px 160px;
+    gap: 90px;
+}
+
+.team-a p {
+    font-size: 120%;
+    line-height: 25px;
+    width: 900px;
+}
+
+.team-a h1 {
+    font-size: xx-large;
+}
+
+
+
+.team-box {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    padding-bottom: 110px;
+}
+
+.boxes {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.boxes p {
+    font-size: 20px;
+}
+
+.promo-team-page {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: url(/images/zakinthos.jpg) no-repeat center bottom/cover;
+}
+
+
+.promo-team-page h1 {
+    font-size: 40px;
+}
+
+
+/* --------- ΤΑ ΠΑΡΑΠΑΝΩ EINAI ΓΙΑ ΤΗΝ HOME PAGE ΛΟΓΙΚΑ -------  */
+
+
+
+.home-bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.promo-about-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background: url('/images/oia-view-1.webp') no-repeat center bottom/cover;
+}
+
+.promo-about-home img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.promo-about-home h1 {
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 40px 15px;
+}
+
+
+
+/* --------- ABOUT PAGE ----------*/
+
+.about-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+
+
+.about-hero-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    background: url("/images/window.jpg") no-repeat center center/cover;
+}
+
+.about-hero-img .test {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000011;
+}
+
+.about-hero-img .test::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+
+.title-blog {
+    font-size: 54px;
+    color: #fff;
+    z-index: 2;
+}
+
+
+
+/*       TEAM TITLE A       */
+
+
+.team-title-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 90px;
+    width: 1300px;
+    padding: 20px 160px 20px 160px;
+}
+
+
+
+.team-title-a h1 {
+    font-size: xx-large;
+}
+
+.team-title-a p {
+    font-size: 130%;
+}
+
+
+.team-title-a h1 {
+    font-size: xx-large;
+}
+
+.team-title-a p {
+    font-size: 120%;
+}
+
+
+
+
+/*       TEAM TITLE B       */
+
+
+.team-title-b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+    width: 1300px;
+    padding: 40px 160px 40px 160px;
+}
+
+
+.team-title-b h3 {
+    font-size: xx-large;
+}
+
+
+.team-title-b p {
+    font-size: 120%; 
+    line-height: 25px;
+    padding: 40px;
+}
+
+
+
+
+
+/*         TEAM TITLE C         */
+
+.team-title-c {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    padding: 70px 100px 100px 100px;
+    background: #f6f0e6c2;
+}
+
+
+.team-title-c h3 {
+    font-size: xx-large;
+}
+
+
+.team-title-c p {
+    font-size: 120%; 
+    line-height: 25px;
+    width: 900px;
+    padding-bottom: 80px 80px;
+}
+
+
+.three-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-img {
+    height: 520px;
+    width: 100vw;
+    background: url(/images/about-us.jpg) no-repeat center center/cover;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0.082);
+
+}
+
+
+
+.team-btn {
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: #5F3F25;
+    color: #FFECCE;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.company-sectors {
+    width:600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+
+
+.company-sectors img {
+    width: 400px;
+    height: 400px;
+}
+
+.team-title-e h2{
+    font-size: 35px;
+}
+
+/* ---------     CONTACT PAGE   ----------*/
+
+.contact-hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 250px;
+    width: 100vw;
+    background: url(/images/pool-1.jpg) no-repeat center/cover;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.contact-hero-section .test-contact {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000011;
+}
+
+.contact-h1 {
+    font-size: 54px;
+    color: whitesmoke;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+}
+
+
+/* --------- CONTACT PAGE - MAIN TEXTS----------*/
+
+.two-colums-contact {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    width: 1000px;
+
+}
+
+.contacttext {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 30px 50px 50px;
+    width: 580px;
+    padding-top: 60px;
+    font-size: 100%;
+}
+
+
+
+.contact-h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    display: inline;
+    line-height: 28px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+
+.container-form2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 40px;
+}
+
+.container-contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 650px;
+    padding: 0px 30px 100px 30px;
+}
+
+
+
+
+
+.btncontact {
+    background-color: #5F3F25;
+    color: aliceblue;
+    font-size: medium;
+}
+
+
+.contactpage-promo {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+
+
+
+/* --------- BLOG PAGE ----------*/
+
+
+.blog-hero-img {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    background: url("/images/traveller-coffee.jpeg") no-repeat center center/cover;
+}
+
+
+.blog-hero-img .transparent-title {
+    position: absolute;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.337);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 54px;
+}
+
+.transparent-title h1{
+align-items: center;
+}
+
+
+.blog-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blog-team-title {
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 160px 20px 160px;
+}
+
+
+.blog-team-title h1 {
+    font-size: xx-large;
+}
+
+.blog-introtext {
+    width: 1100px;
+    padding-bottom: 40px;
+}
+
+.blog-content {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    background-color: #f3d7b3;
+    background-image: linear-gradient(#f3d7b3, #fffbf7);
+}
+
+.blog-content h1 {
+    font-size: 32px;
+}
+
+.blog-content p {
+    font-size: 120%;
+    line-height: 25px;
+}
+
+
+.blog-introtext p {
+    width: 1100px;
+}
+
+
+.team img {
+    height: 750px;
+    width: 100vw;
+}
+
+
+.boxes-blog {
+    width: 1100px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.blog-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    gap: 30px;
+    padding: 30px 0px 30px 0px;
+}
+
+
+.promo-blog-page {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    background: url(/images/white-building.jpg) no-repeat center bottom/cover;
+}
+
+
+.promo-blog-page h1 {
+    font-size: 40px;
+}
+
+
+
+
+/* --------- COLORS USED ------------
+
+#FFECCE, #5F3F25, btn=darksalomon
+
+FOOTER COLORS: background-color: rgba(26, 26, 26, 0.763);
+
+----------*/
+
+
+.boxes-people {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
