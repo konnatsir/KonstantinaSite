@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+  <script src="javascript/carousel.js" defer></script>
 </head>
 
 <body>
@@ -22,21 +23,22 @@
     <div class="nav-container">
       <nav class="nav">
         <div class="logo">
-            <img src="/images/logoipsum-298.svg" alt="logo">
+          <img src="/images/logoipsum-298.svg" alt="logo">
         </div>
 
 
         <div class="menu">
-            <ul class="menu-items">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/team.html">Team</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+          <ul class="menu-items">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/team.html">Team</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div class="action-icon"><i class="fa-solid fa-phone-flip" style="font-size:x-large; height: fit-content;"></i></div>
-    </nav>
+        <div class="action-icon"><i class="fa-solid fa-phone-flip" style="font-size:x-large; height: fit-content;"></i>
+        </div>
+      </nav>
     </div>
 
 
@@ -93,24 +95,46 @@
       </section>
 
 
-<!-----------     CAROUSEL      -------->
+      <!-----------     CAROUSEL      -------->
+
+      <div class="carousel-container">
+        <div class="carousel">
+          <h2>Elegance Unveiled</h2>
+          <img class="slides" src="/images/boat_passing.jpg" alt="">
+          <img class="slides" src="/images/floating-breakfast.jpg" alt="">
+          <img class="slides" src="/images/irodio.jpg" alt="">
+          <img class="slides" src="/images/monastiraki.jpg" alt="">
+          <img class="slides" src="/images/mykonos.jpg" alt="">
+          <img class="slides" src="/images/sea-promo.jpg" alt="">
+          <img class="slides" src="/images/rocks.jpg" alt="">
+          <img class="slides" src="/images/santorini.jpg" alt="">
+          <img class="slides" src="/images/window.jpg" alt="">
+          <img class="slides" src="/images/zakinthos.jpg" alt="">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+          <button id="play" onclick="playSlide()">Play</button>
+          <button id="stop" onclick="stopSlide()">Stop</button>
+
+        </div>
+
+        <!--------- SMALL IMAGES BELOW CAROUSEL ------->
 
 
-<div class="carousel-container">
-  <h2>Elegance Unveiled</h2>
-  <img src="/images/boat_passing_car.jpg" alt="">
-  <!-- <img src="/images/floating_breakfast_car.jpg" alt="">
-  <img src="/images/irodio_car.jpg" alt="">
-  <img src="/images/monastiraki_car.jpg" alt="">
-  <img src="/images/mykonos_car.jpg" alt="">
-  <img src="/images/port_car.jpg" alt="">
-  <img src="/images/rocks_car.jpg" alt="">
-  <img src="/images/santorini_car.jpg" alt="">
-  <img src="/images/window_car.jpg" alt="">
-  <img src="/images/zakinthos_car.jpg" alt=""> -->
-</div>
+        <div id="indicator">
 
+          <img class="dot" src="/images/boat_passing.jpg" alt="" onclick="currentSlide(1)">
+          <img class="dot" src="/images/floating-breakfast.jpg" alt="" onclick="currentSlide(2)">
+          <img class="dot" src="/images/irodio.jpg" alt="" onclick="currentSlide(3)">
+          <img class="dot" src="/images/monastiraki.jpg" alt="" onclick="currentSlide(4)">
+          <img class="dot" src="/images/mykonos.jpg" alt="" onclick="currentSlide(5)">
+          <img class="dot" src="/images/sea-promo.jpg" alt="" onclick="currentSlide(6)">
+          <img class="dot" src="/images/rocks.jpg" alt="" onclick="currentSlide(7)">
+          <img class="dot" src="/images/santorini.jpg" alt="" onclick="currentSlide(8)">
+          <img class="dot" src="/images/window.jpg" alt="" onclick="currentSlide(9)">
+          <img class="dot" src="/images/zakinthos.jpg" alt="" onclick="currentSlide(10)">
+        </div>
 
+      </div>
 
       <div class="home-bottom-section">
         <section class="promo-about-home">
@@ -150,7 +174,7 @@
       <div class="footer-container">
         <div class="footer-logo">
           <!-- <img src="/images/logoipsum-298.svg" alt=""> -->
-          <img src="/images/logoipsum-298.svg" alt="" >
+          <img src="/images/logoipsum-298.svg" alt="">
 
         </div>
         <div class="footer-info">
