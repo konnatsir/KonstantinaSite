@@ -36,6 +36,27 @@ body {
     align-items: center;
 }
 
+svg {
+    height: 80%;
+}
+
+.svg {
+    animation: flower 0.8s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes flower {
+    from {
+        transform: rotateZ(0deg)
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+
 .logo img {
     height: 80%;
 }
@@ -195,14 +216,51 @@ body {
 
 /*----------------INTERNAL PAGES AT HOME PAGE-------------*/
 
+.left-right {
+    animation: left-right 5s;
+    animation-iteration-count: 1;
+}
+
+
+.right-left {
+    animation: right-left 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes left-right {
+    from {
+        left: -50%
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+
+@keyframes right-left {
+    from {
+        right: -50%
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+
+
 
 .internal {
+    position: relative;
     height: 450px;
     width: 80%;
     display: flex;
 }
 
 .image-1 {
+    position: absolute;
+    left: 0;
     height: 350px;
     width: 50%;
     background: url("/images/white-building.jpg") no-repeat center center/cover;
@@ -210,7 +268,8 @@ body {
 
 
 .info-1 {
-
+    position: absolute;
+    right: 0;
     height: 350px;
     width: 50%;
     display: flex;
@@ -246,6 +305,8 @@ body {
 
 
 .image-2 {
+    position: absolute;
+    right: 0;
     height: 350px;
     width: 50%;
     background: url("/images/oia-view-2.webp") no-repeat center center/cover;
@@ -253,7 +314,8 @@ body {
 
 
 .info-2 {
-
+    position: absolute;
+    left: 0;
     height: 350px;
     width: 50%;
     display: flex;
@@ -1015,7 +1077,10 @@ body {
 }
 
 #fullname,
-#email, #tel, #message, #address {
+#email,
+#tel,
+#message,
+#address {
     height: 30px;
     border-radius: 5px;
     width: 300px;
@@ -1030,7 +1095,7 @@ body {
     border-style: none;
 }
 
-.message-btn{
+.message-btn {
     display: flex;
     gap: 30px;
     flex-direction: column;
