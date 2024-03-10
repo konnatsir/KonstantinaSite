@@ -1,6 +1,6 @@
 const req = new XMLHttpRequest();
 
-req.open('GET', '/DATA/data.json');
+req.open('GET', './json/data.json');
 req.responseType = 'json';
 
 
@@ -29,4 +29,6 @@ req.addEventListener('readystatechange', () => {
         }
     }
 
-})
+});
+
+req.send();
