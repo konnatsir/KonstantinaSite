@@ -23,9 +23,9 @@ body {
     display: flex;
     width: 80%;
     height: 60px;
-
     align-items: center;
     justify-content: center;
+    padding-right: 25px;
 }
 
 .logo {
@@ -63,29 +63,27 @@ body {
 
 .nav ul li:hover {
 
-    border-bottom: 5px solid rgb(255, 172, 37);
+    border-bottom: 5px solid rgb(251, 212, 149);
 }
 
 .nav ul li:hover a {
-    color: rgb(255, 172, 37);
+    color: rgb(251, 212, 149);
 }
 
 .nav a {
     text-decoration: none;
     display: block;
     padding: 20px 20px;
+    font-size: 18px;
 }
 
 
 .action-icon {
-    width: 10%;
+    width: 4%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-
-
 }
 
 .action-icon i {
@@ -146,12 +144,12 @@ body {
 
 /*----------------HEADER TITLE-------------*/
 .header-title {
-    height: 450px;
+    height: 500px;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 90px;
     padding-top: 60px;
 }
 
@@ -174,7 +172,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .icon {
@@ -183,12 +181,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     font-weight: bold;
 }
 
 
-
+.icon p {
+    font-weight: bold;
+    font-size: 25px;
+}
 
 
 
@@ -217,6 +218,15 @@ body {
     gap: 20px;
     padding-left: 100px;
     justify-content: center;
+}
+
+.info-1 h1 {
+    font-size: xx-large;
+}
+
+
+.info-1 p {
+    font-size: 120%;
 }
 
 .btn-right-1 {
@@ -251,6 +261,17 @@ body {
     gap: 20px;
     justify-content: center;
 }
+
+
+.info-2 h1 {
+    font-size: xx-large;
+}
+
+
+.info-2 p {
+    font-size: 120%;
+}
+
 
 .btn-right-2 {
     display: flex;
@@ -310,16 +331,21 @@ body {
     background-color: #fbf2e499;
 }
 
+.home-page-promo-section h1 {
+    font-size: 32px;
+}
+
+
 
 /*---------------   CAROUSEL        -------------*/
 
-.carousel-container{
+.carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-   /*  height: 70px;
+    /*  height: 70px;
     width: 70px; */
 }
 
@@ -379,32 +405,32 @@ body {
     cursor: pointer;
     height: 60px;
     width: 60px;
-    margin: 0 2px;
-    background-color: #ffcdacf2;
+
+    opacity: 0.7;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-    background-color: #f7c096;
+.active,
+.dot:hover {
+    opacity: 1;
 }
 
 
-#play, #stop {
+#play,
+#stop {
+    background-color: #5c310e;
     cursor: pointer;
     position: relative;
     margin: 15px auto;
     padding: 10px;
-    color: rgb(101, 69, 38);
+    color: rgb(255, 200, 172);
     font-weight: bold;
     font-size: 12px;
     transition: 0.6s ease;
     width: fit-content;
-    }
-
-
-
+}
 
 
 
@@ -527,7 +553,9 @@ body {
 
 /* --------- TEAM PAGE ----------*/
 
+
 .team {
+    position: absolute;
     height: 250px;
     width: 100%;
     background: url("/images/offices.jpg") no-repeat center center/cover;
@@ -544,6 +572,8 @@ body {
 
 
 .team-container {
+    height: 250px;
+    position: relative;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -897,8 +927,11 @@ body {
     align-items: start;
     flex-direction: row;
     width: 1000px;
-
+    padding-bottom: 130px;
+    gap: 80px;
+    font-size: 120%;
 }
+
 
 .contacttext {
     display: flex;
@@ -908,8 +941,6 @@ body {
     gap: 25px;
     padding: 0px 30px 50px 50px;
     width: 580px;
-    padding-top: 60px;
-    font-size: 100%;
 }
 
 
@@ -918,8 +949,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 15px;
+    text-align: left;
     display: inline;
     line-height: 28px;
 }
@@ -930,27 +960,46 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 90px;
 }
 
 .container-form1 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+    align-items: left;
+    flex-direction: column;
+    gap: 8px;
     padding-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
+.fullname {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.email {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.email-int {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .container-form2 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .container-contact-us {
@@ -958,21 +1007,34 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
     width: 650px;
-    padding: 0px 30px 100px 30px;
+    padding: 15px 30px 30px 30px;
+    background-color: #f3d7b3;
+    border-radius: 8px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.10)
 }
 
-
-
+#fullname,
+#email, #tel, #message, #address {
+    height: 30px;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 18px;
+}
 
 
 .btncontact {
     background-color: #5F3F25;
-    color: aliceblue;
+    color: #FFECCE;
     font-size: medium;
+    border-style: none;
 }
 
+.message-btn{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
 
 .contactpage-promo {
     width: 100vw;
@@ -1002,23 +1064,24 @@ body {
     background: url("/images/traveller-coffee.jpeg") no-repeat center center/cover;
 }
 
-
-.blog-hero-img .transparent-title {
+.transparent-title {
     position: absolute;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.337);
-    width: 100%;
-    height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     font-size: 54px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.337);
 }
 
-.transparent-title h1 {
-    align-items: center;
+
+.blog-hero-img .transparent-title {
+    /* background: rgba(0, 0, 0, 0.337); */
+    width: 100%;
+    height: 100%;
+
 }
+
 
 
 .blog-container {
@@ -1131,12 +1194,3 @@ body {
 FOOTER COLORS: background-color: rgba(26, 26, 26, 0.763);
 
 ----------*/
-
-
-.boxes-people {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
