@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <script src="javascript/carousel.js" defer></script>
+    <script src="javascript/animations.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@1,100&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-  <script src="javascript/carousel.js" defer></script>
-  <script src="javascript/animations.js" defer></script>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+  <body>
+    <div class="container">
+      <!----   NAV  ----->
 
-<body>
-
-  <div class="container">
-
-    <!----   NAV  ----->
-
-    <div class="nav-container">
-      <nav class="nav">
-        <div class="logo logo-svg" >
-
-
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <svg version="1.1" id="logo-88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 40 41" style="enable-background:new 0 0 40 41;" xml:space="preserve">
-          <style type="text/css">
-            .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-          </style>
-          <path class="st0 svg" d="M13.7,0.5c-2.3,0-4.4,0.9-6,2.5L0,10.7v3.5c0,2.5,1.1,4.7,2.8,6.3C1.1,22.1,0,24.3,0,26.8v3.5L7.7,38
+      <div class="nav-container">
+        <nav class="nav">
+          <div class="logo logo-svg">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="logo-88"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 40 41"
+              style="enable-background: new 0 0 40 41"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  fill: #ffffff;
+                }
+              </style>
+              <path
+                class="st0 svg"
+                d="M13.7,0.5c-2.3,0-4.4,0.9-6,2.5L0,10.7v3.5c0,2.5,1.1,4.7,2.8,6.3C1.1,22.1,0,24.3,0,26.8v3.5L7.7,38
             c1.6,1.6,3.8,2.5,6,2.5c2.5,0,4.7-1.1,6.3-2.8c1.6,1.7,3.8,2.8,6.3,2.8c2.3,0,4.4-0.9,6-2.5l7.7-7.7v-3.5c0-2.5-1.1-4.7-2.8-6.3
             c1.7-1.6,2.8-3.8,2.8-6.3v-3.5L32.3,3c-1.6-1.6-3.8-2.5-6-2.5c-2.5,0-4.7,1.1-6.3,2.8C18.4,1.6,16.2,0.5,13.7,0.5z M25.8,20.5
             c-0.1-0.1-0.2-0.2-0.3-0.3L20,14.8l-5.5,5.5c-0.1,0.1-0.2,0.2-0.3,0.3c0.1,0.1,0.2,0.2,0.3,0.3l5.5,5.5l5.5-5.5
@@ -42,208 +57,268 @@
             c-1.1,0-2.1,0.4-2.9,1.2L22.2,30.3z M17.8,30.3l-6.4-6.4c-0.8-0.8-1.8-1.2-2.9-1.2c-2.2,0-4.1,1.8-4.1,4.1v1.7l6.4,6.4
             c0.8,0.8,1.8,1.2,2.9,1.2c2.2,0,4.1-1.8,4.1-4.1V30.3z M17.8,9v1.7l-6.4,6.4c-0.8,0.8-1.8,1.2-2.9,1.2c-2.2,0-4.1-1.8-4.1-4.1v-1.7
             l6.4-6.4C11.6,5.4,12.6,5,13.7,5C16,5,17.8,6.8,17.8,9z M28.6,17.1l-6.4-6.4V9C22.2,6.8,24,5,26.3,5c1.1,0,2.1,0.4,2.9,1.2l6.4,6.4
-            v1.7c0,2.2-1.8,4.1-4.1,4.1C30.4,18.3,29.4,17.9,28.6,17.1z"/>
-          </svg>
-          
-
-
-        </div>
-
-
-        <div class="menu">
-          <ul class="menu-items">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/team.html">Team</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-
-        <div class="action-icon"><i class="fa-solid fa-phone-flip" style="font-size:x-large; height: fit-content;"></i>
-        </div>
-        <div class="action-icon"><i class="fa-regular fa-envelope" style="font-size:x-large; height:fit-content;"></i>
-        </div>
-        
-      </nav>
-    </div>
-
-
-    <div class="main-home-page">
-
-
-
-      <!---- HERO VIDEO ----->
-
-      <section class="home-hero-img">
-        <div class="test"></div>
-        <h1 class="title-home">Elevate your Hospitality</h1>
-        <h2 class="title-home">#Join us</h2>
-
-      </section>
-
-      <section class="header-title">
-
-
-        <h3>BeeTrust in numbers</h3>
-        <div class="icons">
-
-          <div class="icon">
-            <i class="fa-regular fa-building fa-3x"></i> 
-            <p>Companies</p>
-          </div>
-          <div class="icon"><i class="fa-solid fa-list-check fa-3x"></i>
-            <p>Projects</p>
-          </div>
-          <div class="icon">
-            <i class="fa-solid fa-arrow-pointer fa-3x"></i>
-            <p>Increase of Visits</p>
+            v1.7c0,2.2-1.8,4.1-4.1,4.1C30.4,18.3,29.4,17.9,28.6,17.1z"
+              />
+            </svg>
           </div>
 
-        </div>
-      </section>
-
-
-      <section class="internal">
-        <div class="image-1">
-        </div>
-        <div class="info-1">
-          <h1>Explore everything about us</h1>
-          <div class="home-page-p">
-            <p>At BeeTrust, we are driven by passion and innovation. Discover the story behind our brand...</p>
-            <a class="btn" href="/about.html">ABOUT US</a>
+          <div class="menu">
+            <ul class="menu-items">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/team.html">Team</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
           </div>
-        </div>
-      </section>
 
-
-      <section class="internal">
-        <div class="info-2">
-          <h1>Specialists behind BeeTrust</h1>
-          <div class="home-page-p">
-            <p>Meet the talented individuals who form the heart and soul of BeeTrust...</p>
-            <a class="btn" href="/team.html">OUR TEAM</a>
+          <div class="action-icon">
+            <i
+              class="fa-solid fa-phone-flip"
+              style="font-size: x-large; height: fit-content"
+            ></i>
           </div>
-        </div>
-        <div class="image-2">
-        </div>
-      </section>
-
-
-      <!-----------     CAROUSEL      -------->
-
-      <div class="carousel-container">
-        <div class="carousel">
-          <h2>Elegance Unveiled</h2>
-          <img class="slides" src="/images/boat_passing.jpg" alt="">
-          <img class="slides" src="/images/floating-breakfast.jpg" alt="">
-          <img class="slides" src="/images/irodio.jpg" alt="">
-          <img class="slides" src="/images/monastiraki.jpg" alt="">
-          <img class="slides" src="/images/mykonos.jpg" alt="">
-          <img class="slides" src="/images/sea-promo.jpg" alt="">
-          <img class="slides" src="/images/rocks.jpg" alt="">
-          <img class="slides" src="/images/santorini.jpg" alt="">
-          <img class="slides" src="/images/window.jpg" alt="">
-          <img class="slides" src="/images/zakinthos.jpg" alt="">
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
-          <button id="play" onclick="playSlide()">Play</button>
-          <button id="stop" onclick="stopSlide()">Stop</button>
-
-        </div>
-
-        <!--------- SMALL IMAGES BELOW CAROUSEL ------->
-
-
-        <div id="indicator">
-
-          <img class="dot" src="/images/boat_passing.jpg" alt="" onclick="currentSlide(1)">
-          <img class="dot" src="/images/floating-breakfast.jpg" alt="" onclick="currentSlide(2)">
-          <img class="dot" src="/images/irodio.jpg" alt="" onclick="currentSlide(3)">
-          <img class="dot" src="/images/monastiraki.jpg" alt="" onclick="currentSlide(4)">
-          <img class="dot" src="/images/mykonos.jpg" alt="" onclick="currentSlide(5)">
-          <img class="dot" src="/images/sea-promo.jpg" alt="" onclick="currentSlide(6)">
-          <img class="dot" src="/images/rocks.jpg" alt="" onclick="currentSlide(7)">
-          <img class="dot" src="/images/santorini.jpg" alt="" onclick="currentSlide(8)">
-          <img class="dot" src="/images/window.jpg" alt="" onclick="currentSlide(9)">
-          <img class="dot" src="/images/zakinthos.jpg" alt="" onclick="currentSlide(10)">
-        </div>
-
+          <div class="action-icon">
+            <i
+              class="fa-regular fa-envelope"
+              style="font-size: x-large; height: fit-content"
+            ></i>
+          </div>
+        </nav>
       </div>
 
-      <div class="home-bottom-section">
-        <section class="promo-about-home">
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/about.html">About</a></li>
+                      <li><a href="/team.html">Team</a></li>
+                      <li><a href="/blog.html">Blog</a></li>
+                      <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
+      <div class="main-home-page">
+        <!---- HERO VIDEO ----->
 
-          <h1>Explore #BeeTrust</h1>
-          <a class="btn" href="/contact.html">CONTACT US</a>
+        <section class="home-hero-img">
+          <div class="test"></div>
+          <h1 class="title-home">Elevate your Hospitality</h1>
+          <h2 class="title-home">#Join us</h2>
         </section>
 
-
-
-
-        <section class="home-page-promo-section">
-
-          <h1>Our latest news! Browse through...</h1>
-
+        <section class="header-title">
+          <h3>BeeTrust in numbers</h3>
           <div class="icons">
             <div class="icon">
-              <img src="/images/posts.jpg" alt="">
+              <i class="fa-regular fa-building fa-3x"></i>
+              <p>Companies</p>
             </div>
             <div class="icon">
-              <img src="/images/posts.jpg" alt="">
+              <i class="fa-solid fa-list-check fa-3x"></i>
+              <p>Projects</p>
             </div>
             <div class="icon">
-              <img src="/images/posts.jpg" alt="">
+              <i class="fa-solid fa-arrow-pointer fa-3x"></i>
+              <p>Increase of Visits</p>
             </div>
-
           </div>
-          <a class="btn" href="/blog.html">OUR NEWS</a>
-
         </section>
+
+        <section class="internal">
+          <div class="image-1"></div>
+          <div class="info-1">
+            <h1>Explore everything about us</h1>
+            <div class="home-page-p">
+              <p>
+                At BeeTrust, we are driven by passion and innovation. Discover
+                the story behind our brand...
+              </p>
+              <a class="btn" href="/about.html">ABOUT US</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="internal">
+          <div class="info-2">
+            <h1>Specialists behind BeeTrust</h1>
+            <div class="home-page-p">
+              <p>
+                Meet the talented individuals who form the heart and soul of
+                BeeTrust...
+              </p>
+              <a class="btn" href="/team.html">OUR TEAM</a>
+            </div>
+          </div>
+          <div class="image-2"></div>
+        </section>
+
+        <!-----------     CAROUSEL      -------->
+
+        <div class="carousel-container">
+          <div class="carousel">
+            <h2>Elegance Unveiled</h2>
+            <img class="slides" src="/images/boat_passing.jpg" alt="" />
+            <img class="slides" src="/images/floating-breakfast.jpg" alt="" />
+            <img class="slides" src="/images/irodio.jpg" alt="" />
+            <img class="slides" src="/images/monastiraki.jpg" alt="" />
+            <img class="slides" src="/images/mykonos.jpg" alt="" />
+            <img class="slides" src="/images/sea-promo.jpg" alt="" />
+            <img class="slides" src="/images/rocks.jpg" alt="" />
+            <img class="slides" src="/images/santorini.jpg" alt="" />
+            <img class="slides" src="/images/window.jpg" alt="" />
+            <img class="slides" src="/images/zakinthos.jpg" alt="" />
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <button id="play" onclick="playSlide()">Play</button>
+            <button id="stop" onclick="stopSlide()">Stop</button>
+          </div>
+
+          <!--------- SMALL IMAGES BELOW CAROUSEL ------->
+
+          <div id="indicator">
+            <img
+              class="dot"
+              src="/images/boat_passing.jpg"
+              alt=""
+              onclick="currentSlide(1)"
+            />
+            <img
+              class="dot"
+              src="/images/floating-breakfast.jpg"
+              alt=""
+              onclick="currentSlide(2)"
+            />
+            <img
+              class="dot"
+              src="/images/irodio.jpg"
+              alt=""
+              onclick="currentSlide(3)"
+            />
+            <img
+              class="dot"
+              src="/images/monastiraki.jpg"
+              alt=""
+              onclick="currentSlide(4)"
+            />
+            <img
+              class="dot"
+              src="/images/mykonos.jpg"
+              alt=""
+              onclick="currentSlide(5)"
+            />
+            <img
+              class="dot"
+              src="/images/sea-promo.jpg"
+              alt=""
+              onclick="currentSlide(6)"
+            />
+            <img
+              class="dot"
+              src="/images/rocks.jpg"
+              alt=""
+              onclick="currentSlide(7)"
+            />
+            <img
+              class="dot"
+              src="/images/santorini.jpg"
+              alt=""
+              onclick="currentSlide(8)"
+            />
+            <img
+              class="dot"
+              src="/images/window.jpg"
+              alt=""
+              onclick="currentSlide(9)"
+            />
+            <img
+              class="dot"
+              src="/images/zakinthos.jpg"
+              alt=""
+              onclick="currentSlide(10)"
+            />
+          </div>
+        </div>
+
+        <div class="home-bottom-section">
+          <section class="promo-about-home">
+            <h1>Explore #BeeTrust</h1>
+            <a class="btn" href="/contact.html">CONTACT US</a>
+          </section>
+
+          <section class="home-page-promo-section">
+            <h1>Our latest news! Browse through...</h1>
+
+            <div class="icons icons2">
+              <div class="icon">
+                <img src="/images/posts.jpg" alt="" />
+              </div>
+              <div class="icon">
+                <img src="/images/posts.jpg" alt="" />
+              </div>
+              <div class="icon">
+                <img src="/images/posts.jpg" alt="" />
+              </div>
+            </div>
+            <a class="btn" href="/blog.html">OUR NEWS</a>
+          </section>
+        </div>
       </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="/images/logoipsum-298.svg" alt="" />
+          </div>
+
+          <div class="footer-info">
+            <h4>At a glance</h4>
+            <p><a href="/about.html">About us </a></p>
+            <p><a href="/team.html">Our team</a></p>
+            <p><a href="/contact.html">Contact us</a></p>
+            <p><a href="/blog.html">Our news</a></p>
+          </div>
+          <div class="footer-info">
+            <h4>Contact Details</h4>
+            <p><a href="mailto:info@beetrust.com">info@beetrust.com</a></p>
+            <p><a href="tel:+30 210 2566 47">+30 210 2566 47</a></p>
+            <p>
+              <a href="https://maps.app.goo.gl/8txc34nJfLc18sqj8"
+                >Aggelopoulou 25,</a
+              >
+            </p>
+            <p>
+              <a href="https://maps.app.goo.gl/8txc34nJfLc18sqj8"
+                >Athens, 145 66</a
+              >
+            </p>
+          </div>
+          <div class="socials">
+            <h2>Follow us</h2>
+            <ul class="social-icons">
+              <li class="social1">
+                <i class="fa-brands fa-square-facebook fa-2x"></i>
+              </li>
+              <li class="social2">
+                <i class="fa-brands fa-square-instagram fa-2x"></i>
+              </li>
+              <li class="social3">
+                <i class="fa-brands fa-square-twitter fa-2x"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 All Rights Reserved</p>
+        </div>
+      </footer>
     </div>
-
-
-    <footer class="footer">
-      <div class="footer-container">
-
-        <div class="footer-logo">
-          <img src="/images/logoipsum-298.svg" alt="">
-        </div>
-
-        <div class="footer-info">
-          <h4>At a glance</h4>
-          <p><a href="/about.html">About us </a></p>
-          <p><a href="/team.html">Our team</a></p>
-          <p><a href="/contact.html">Contact us</a></p>
-          <p><a href="/blog.html">Our news</a></p>
-        </div>
-        <div class="footer-info">
-          <h4>Contact Details</h4>
-          <p><a href="mailto:info@beetrust.com">info@beetrust.com</a></p>
-          <p><a href="tel:+30 210 2566 47">+30 210 2566 47</a></p>
-          <p><a href="https://maps.app.goo.gl/8txc34nJfLc18sqj8">Aggelopoulou 25,</a></p>
-          <p><a href="https://maps.app.goo.gl/8txc34nJfLc18sqj8">Athens, 145 66</a></p>
-        </div>
-        <div class="socials">
-          <h2>Follow us</h2>
-          <ul class="social-icons">
-            <li class="social1"><i class="fa-brands fa-square-facebook fa-2x"></i></li>
-            <li class="social2"><i class="fa-brands fa-square-instagram fa-2x"></i></li>
-            <li class="social3"><i class="fa-brands fa-square-twitter fa-2x"></i></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2024 All Rights Reserved</p>
-      </div>
-
-    </footer>
-  </div>
-
-
-</body>
-
+  </body>
 </html>
