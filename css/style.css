@@ -975,16 +975,7 @@ svg {
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-#fullname,
-#email,
-#tel,
-#message,
-#address {
-  height: 30px;
-  border-radius: 5px;
-  width: 300px;
-  font-size: 18px;
-}
+
 
 #message {
     width: 300px;
@@ -1015,7 +1006,66 @@ svg {
   justify-content: center;
   gap: 40px;
 }
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #a9bae64a;
+}
+.box {
+  padding-bottom: 10px;
+  width: 100%;
+}
+form{
+  width: 100%;
+}
+.form-inline {
+  border: 1px solid #ccc;
+  padding: 8px 10px 4px;
+  border-radius: 2px;
+}
+.form-inline label,
+.form-inline input {
+  display: inline-block;
+  width: auto;
+  padding-right: 15px;
+}
+.error {
+  color: red;
+  font-size: 90%;
+}
+input[type="text"] {
+  outline: none;
+  padding: 15px 10px;
+  width: 100%;
+}
 
+input[type="submit"] {
+  font-size: 1.2rem;
+  background: #5f3f25;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #5f3f25;
+}
+
+.input-1 {
+  background-image: url(./images/check.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid #01cc40;
+}
+.input-2 {
+  background-image: url(./images/cancel.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid red;
+}
 /* --------- BLOG PAGE ----------*/
 
 .blog-hero-img {
@@ -1443,18 +1493,7 @@ FOOTER COLORS: background-color: rgba(26, 26, 26, 0.763);
   .container-contact-us {
     width: 100%;
   }
-  .container-form1 {
-    align-items: center;
-    width: 100%;
-  }
-  .container-form2 {
-    align-items: center;
-    width: 100%;
-  }
-  #message {
-    width: 300px;
-    height: 300px;
-  }
+
 }
 
 @media only screen and (max-width: 810px) {

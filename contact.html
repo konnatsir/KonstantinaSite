@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
     />
+    <script src="/javascript/validation.js"></script>
   </head>
 
   <body>
@@ -97,77 +98,63 @@
         </div>
 
         <div class="container-contact-us">
-          <h3>Please feel free to spam us:</h3>
 
-          <form action="#">
-            <div class="container-form1">
-              <div class="fullname">
-                <label for="fullname">Full Name:</label>
-                <input
-                  type="text"
-                  id="fullname"
-                  name="fullname"
-                  placeholder="Enter your fullname"
-                />
-              </div>
-
-              <div class="email">
-                <div class="email-int">
-                  <label for="email">Email:</label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="ex.: xxxx@example.com"
-                  />
-                </div>
-                <div class="email-int">
-                  <label for="email">Confirm email: </label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Confirm your email"
-                  />
-                </div>
-              </div>
-
-              <label for="tel">Contact Number: </label>
-              <input
-                type="number"
-                id="tel"
-                name="tel"
-                placeholder="+00 (000)-0000000"
-              />
-              <label for="address">Address:</label>
+          <form name="Form" onsubmit="return validateForm()">
+            <h2>Please feel free to spam us:</h2>
+            <div class="box">
+              <label>Full Name</label>
               <input
                 type="text"
-                id="address"
-                name="address"
-                placeholder="Enter your address"
+                name="name"
+                id="name"
+                placeholder="E.g John Smith"
               />
+              <div class="error" id="nameErr"></div>
             </div>
-
-            <!---------------       MESSAGE CONTAINER FORM  --------------------->
-
-            <div class="container-form2">
-              <div class="message">
-                <label for="message">Message: </label>
-              </div>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write something.."
-              ></textarea>
-              <div class="message-btn">
-                <button
-                  class="btncontact"
-
-                >
-                  SUBMIT
-                </button>
-              </div>
+            <div class="box">
+              <label>Email </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="E.g example@domain.com"
+              />
+              <div class="error" id="emailErr"></div>
             </div>
+            <div class="box">
+              <label>Confirm Email</label>
+              <input
+                type="text"
+                name="emailcom"
+                id="emailcom"
+                placeholder="E.g example@domain.com"
+              />
+              <div class="error" id="emailComErr"></div>
+            </div>
+            <div class="box">
+              <label>Mobile Number</label>
+              <input
+                type="text"
+                name="mobile"
+                id="mobile"
+                placeholder="E.g 69100011100"
+              />
+              <div class="error" id="mobileErr"></div>
+            </div>
+            <div class="box">
+              <label>Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="E.g Kolokotroni 123, 55555 Athens"
+              />
+              <div class="error" id="addressErr"></div>
+            </div>
+            <div class="box">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
           </form>
         </div>
       </div>
